@@ -5,82 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGN UP PAGE</title>
 <header>
-    <center><h2>Sign Up for Your Oakstone Bank Account.</h2>
-<p><b><i>Join thousands of customers enjoying secure and seamless banking.</i></b></p></center>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
 </header>
 </head>
 <body>
-    <style>
 
-    form {
-        
-        margin:100px ; margin: top 1px; 
-    }
+    <!--NAVIGATION SECTION-->
+    <nav class="navbar">
+        <div class="logo">OakstoneBank</div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="transfer_money.html">Transfer</a></li>
+        </ul>
+    </nav>
+    
+    <!--HERO SECTION-->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sign Up for Your Oakstone Bank Account.</h1>
+            <p>Join millions of customers enjoying secure and seamless banking.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images/sign_up.PNG" alt="join us!">
+        </div>
+    </section>
 
-    </style>
-    <form action="">
-        <label for="fullname">Account Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" id="Full Name" value="" placeholder="Please, enter your full name." required><br><br>
+    <!--SIGN UP and LOGIN SECTION-->
+    
+    <section id="signup" class="signup">
+        <div class="container">
+            <!-- Centralized Header -->
+            <h2 class="section-title">Sign Up Form</h2>
+            
+            <!-- Two-Column Layout -->
+            <div class="form-columns">
+                <!-- Sign Up Form (Left Column) -->
+                <div class="form-container signup-form">
+                    <h3>Sign Up</h3>
+                    <form action="">
+                        <input type="text" id="full-name" placeholder="Please, enter your full name." required><br><br>
+                        <input type="text" id="account-number" placeholder="Please, enter your 10 digit account number." required><br><br>
+                        <select id="account-type" required>
+                            <option value="">Please, select account type.</option>
+                            <option value="current">Current</option>
+                            <option value="savings">Savings</option>
+                        </select><br><br>
+                        <select id="currency-type" required>
+                            <option value="">Please, select currency type.</option>
+                            <option value="naira">Naira</option>
+                            <option value="dollar">US Dollar (USD)</option>
+                            <option value="pound">British Pound Sterling (GBP)</option>
+                            <option value="euro">Euro (EUR)</option>
+                        </select><br><br>
+                        <input type="date" id="date-of-birth" required><br><br>
+                        <input type="email" id="email" placeholder="Please, enter your email address." required><br><br>
+                        <input type="password" id="password" placeholder="Please, enter your password." required><br><br>
+                        <input type="tel" id="phone-number" placeholder="Please, enter your phone number." required><br><br>
+                        <input type="text" id="contact-address" placeholder="Please, enter your contact address."><br><br>
+                        <input type="submit" class="submit-button" value="Register">
+                    </form>
+                </div>
 
-        <label for="account number">Account Number:</label>&nbsp;&nbsp;&nbsp;
-        <input type="number" id="Account Number" placeholder="Please, enter your 10 digit account number." required><br><br>
+                <!-- Login Form (Right Column) -->
+                <div class="form-container login-form">
+                    <h3>Enter Your Login Credentials</h3>
+                    <form action="">
+                        <input type="email" id="username" placeholder="Please, enter your user name." required><br><br>
+                        <input type="password" id="login-password" placeholder="Please, enter your password." required><br><br>
+                        <input type="submit" class="submit-button" value="Login"><br><br>
+                        <p>
+                            Simply click on the link <a href="transfer_money.html">Transfer Page</a>, select “Transfer,” 
+                            and let us handle the rest. Banking has never been this smooth. Your money, where it needs to be—quickly and safely.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <label for="account type">Select account type:</label>
-        <select name="account type" id="Account Type" required>
-        <option value="current">Current</option>
-        <option value="savings">Savings</option>
-        </select>
-        <br><br>
+                
+<!--FOOTER SECTION-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section" id="footer-section-1">
+                <h3>OakstoneBank</h3>
+                <p>Strong roots, endless growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick-Links</h3>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="transfer_money.html">Transfer</a></li>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="index.html"><i class="fab fa-facebook"></i></a>
+                    <a href="index.html"><i class="fab fa-twitter"></i></a>
+                    <a href="index.html"><i class="fab fa-linkedin"></i></a>
+                    <a href="index.html"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Oakstone Bank 2024. All rights reserved.</p>
 
-        <label for="Currency">Select Currency:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <select name="currency type" id="Currency Type" required>
-        <option value="naira">Naira</option>
-        <option value="dollar">US Dollar (USD)</option>
-        <option value="pound">British Pound Sterling (GBP)</option>
-        <option value="euro">Euro (EUR)</option>
-        </select>
-        <br><br>
-        <label for="DOB">Date of Birth:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="date" id="Date of Birth" placeholder="Please, enter your date of birth.">
-        <br><br>
+        </div>
+    </div>
 
-        <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="email" id="Email" value="" placeholder="Please, enter your email address." required><br><br>
-
-        <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;
-        <input type="password" id="Password" placeholder="Please, enter your password." required><br><br>
-
-        <label for="phone no">Phone Number:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="tel" id="Phone Number" placeholder="Please, enter your phone number." required><br><br>
-
-        <label for="address">Contact Address:</label>&nbsp;&nbsp;&nbsp;
-        <input type="text" id="Contact Address" placeholder="Please, enter your contact address."><br><br>
-
-        <input type="button" value="Register">
-        <br>
-        <br>
-        <br>
-
-        <!--Login Credentials-->
-
-        <h3>Enter your login credentials.</h3><br>
-        
-        <label for="email">User Name:</label>&nbsp;
-        <input type="email" id="User Name" value="Email" placeholder="Please, enter your user name." required><br><br>
-
-        <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;
-        <input type="password" id="Password" value="" placeholder="Please, enter your password." required><br><br>
-
-        <input type="button" value="Login"><br><br>
-
-        <p>Simply click on the link <a href="transfer_money.html">Transfer Page</a>, select “Transfer,” 
-            and let us handle the rest. Banking has never been this smooth.
-            <i>Your money, where it needs to be—quickly and safely.</i></p>
-
-    </form>
+</footer>
 </body>
-
-        <center><footer>&copy; Oakstone Bank 2024</footer></center>
 </html>

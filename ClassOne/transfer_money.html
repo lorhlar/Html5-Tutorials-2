@@ -4,48 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRANSFER PAGE</title>
-
-    <header>
-        <center><h1>Fast, Secure, and Easy Transfers with Oakstone Bank.</h1>
-        <p><b><i>Send money anywhere in the world in just seconds. Whether it’s a local payment, 
-            international transfer, or a quick top-up, we ensure your transactions are seamless and secure.</i></b></p>
-        </center>
-    </header>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        
 </head>
+
 <body>
-    
-<style>
-    form {
-        margin: 200px; ; margin: top 100px;
-    }
-</style>
 
-    <form action="">
-        <b><label for="bank name">Recepient's Bank Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="text" id="Bank Name" required><br><br>
+<!--NAVIGATION SECTION-->
+<nav class="navbar">
+    <div class="logo">OakstoneBank</div>
+    <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="sign_up.html">Sign Up</a></li>
+    </ul>
+</nav>
 
-        <label for="account number">Recepient's Account Number:</label>
-        <input type="number" id="Account Number" required><br><br>
+<!--HERO SECTION-->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Enjoy Seamless Transfers with Oakstone Bank.</h1>
+    </div>
+    <div class="hero-image">
+        <img src="images/transfer.jpg" alt="eTransfer">
+    </div>
+</section>
 
-        <label for="Amount">Amount:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="number" id="Amount" required><br><br>
+<!--TRANSFER MONEY SECTION-->
+<section id="transfer" class="transfer">
+    <div class="container">
+        <h2>Transfer Money</h2>
+        <div class="transfer-content">
+            <div class="transfer-text">
+            <p>Send money anywhere in the world in just seconds. Whether it’s a local payment, 
+            international transfer, or a quick top-up, we ensure your transactions are seamless and secure.</p>
+        <div class="transfer-content">
+            <div class="transfer-form">
+                <form action="">
 
-        <label for="currency">Currency:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <select name="currency" id="Currency">
-            <option value="naira">Naira</option>
-            <option value="dollar">US Dollar (USD)</option>
-            <option value="pound">British Pound Sterling (GBP)</option>
-            <option value="euro">Euro (EUR)</option>
-        </b></select><br><br>
+                    <b><label for="bank name">Recepient's Bank Name:</label>
+                        <input type="text" id="Bank Name" placeholder="Enter bank name." required><br><br>
+                
+                        <label for="account number">Recepient's Account Number:</label>
+                        <input type="text" id="account number" placeholder="Enter account number" required><br><br>
+                
+                        <label for="Amount">Amount:</label>
+                        <input type="text" id="Amount" placeholder="Enter amount." required><br><br>
+                
+                        <label for="currency">Currency:</label>
+                        <select name="currency" id="Currency">
+                            <option value="naira">Naira</option>
+                            <option value="dollar">US Dollar (USD)</option>
+                            <option value="pound">British Pound Sterling (GBP)</option>
+                            <option value="euro">Euro (EUR)</option>
+                        </b></select><br><br>
+                
+                        <input type="button" value="Transfer"> <br><br><br>
+                </form>
 
-        <input type="button" value="Transfer"> <br><br><br>
-    </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+ <!--FOOTER SECTION-->
+ <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section" id="footer-section-1">
+                <h3>OakstoneBank</h3>
+                <p>Strong roots, endless growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick-Links</h3>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="transfer_money.html">Transfer</a></li>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="index.html"><i class="fab fa-facebook"></i></a>
+                    <a href="index.html"><i class="fab fa-twitter"></i></a>
+                    <a href="index.html"><i class="fab fa-linkedin"></i></a>
+                    <a href="index.html"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Oakstone Bank 2024. All rights reserved.</p>
+
+        </div>
+    </div>
+
+</footer>
 </body>
-
-            <center><footer>&copy; Oakstone Bank 2024</footer></center>
 </html>

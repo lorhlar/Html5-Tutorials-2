@@ -18,22 +18,48 @@
         ul {
             text-decoration: line-through;
         }
+
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: smaller;   
+        }
+
+        #description {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .special {
+            color: red;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
     <h1 style="color: blue; text-align: center;">WELCOME TO CSS ClASS.</h1>
     
     <p style="background-color: black; color: white;">CSS: Cascading Style Sheet</p>
-    <p>There are three ways to use CSS</p>
+    <p id="description">There are three ways to use CSS</p>
     <ul style="font-size: large; color: red;">
         <li>Inline Styling</li>
         <li style="color: blue; text-transform: uppercase;">Internal Styling</li>
         <li>External Styling</li>
     </ul>
 
-    <div>
+    <div id="description" style="text-decoration: none;">
         This is a paragraph showing
     </div>
+
+    <h1>CSS SELECTORS</h1>
+    <p>There are two types of selectors</p>
+    <ul>
+        <li>ID</li>
+        <li>Class</li>
+    </ul>
     
+    <p class="special">We write to you with a humble heart.
+
+        Accept our application.
+    </p>
 </body>
 </html>

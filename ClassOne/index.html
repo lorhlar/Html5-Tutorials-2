@@ -3,69 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OAKSTONE BANK</title>
+    <title>OAKSTONE BANK: Strong Roots, Endless Growth</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1><center><b>Welcome to <i>Oakstone</i> Bank</b></center></h1><br><br>
-        <center><i>CE0: ENGR. DIEKOLOLA ONAOPEMIPO ESO</i></center>
     
-        <div>
-            <a href="https://web.facebook.com/diekolola.eso">
-                <center><img src="images/oakstone's logo.jpg" alt="Company's Logo" width="250" height="300"></center>
-                </a>
-                <marquee><b>"Oakstone Bank: Strong Roots, Endless Growth."</b></marquee> <br>
-    
+    <!--NAVIGATION-->
+    <nav class="navbar">
+        <div class="logo">OakstoneBank</div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
 
-    <nav>
-        <b>
-        <ul type="Square">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
             <li> <a href="about_us.html">About Us</a></li>
+            <li> <a href="contact_us.html">Contact Us</a></li>
             <li> <a href="sign_up.html">Sign Up</a></li>
-            <li> <a href="transfer_money.html">Transfer Page</a></li>
-            <li> <a href="contact_us.html">Contact Page</a></li>
+            <li> <a href="transfer_money.html">Transfer</a></li>
             <li> <a href="https://www.google.com" target="_blank">Google Search</a></li>
         </ul>
-        </b>
     </nav>
-    <br><br>
-    <section>
-       
-        <center><h2>Contact Form</h2>
-        <p><b>Fill the form below to make further enquiries.</b></p>
-        </center>
+    
+    <!--HERO SECTION-->
+    <section id="home" class="hero">
+             <div class="hero-content">
+             <h1>Seamless Banking Redefined</h1>
+             <p>Experience strong roots and endless growth as <br> we empower your financial future.</p>
+             <p>Meet the CEO: Engr. (Miss.) Diekolola Eso
+                <i class="fas fa-hand-point-right icon"></i>
+                <span class="oakstone's CEO.jpg"></span>
+             </p>
+             <button class="cta-button">Get Started</button>
+             </div>
+             <div class="hero-image">
+                <a href="https://web.facebook.com/diekolola.eso">
+                    <img src="images/oakstone's CEO.jpg" alt="Profile Image" width="400px" height="500px">
+                    </a>
+            </div>
+    </section>    
+    
+    <!-- FORM SECTION -->
+<section id="form" class="form">
+    <div class="container">
+        <h2>Contact Form</h2>
+        <div class="form-content">
+            <p>Fill the form below to make further enquiries:</p>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" id="Full Name" placeholder="Please enter your full name.">
+                <br><br>
 
-    <style>
-        form {
-            margin: 535px; margin-top: 10px; /* Adjust margin as required*/
-        }
-    </style>
+                <input type="email" id="Email" placeholder="Please enter your email address.">
+                <br><br>
 
-        <form action="">
-        <justify><label for="fullname">Full Name:</label>&nbsp;
-            <input type="text" id="Full Name" value="" placeholder="Please enter your full name.">
-            <br><br>
+                <input type="password" id="Password" placeholder="Please enter your password.">
+                <br><br>
 
-            <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="email" id="Email" value="" placeholder="Please enter your email address.">
-            <br><br>
+                <textarea name="message" id="message" rows="5" cols="32" 
+                    placeholder="Kindly help us with how we can serve you better."></textarea>
+                <br><br>
 
-            <label for="password">Password:</label>&nbsp;&nbsp;
-            <input type="password" id="Password" value="" placeholder="Please enter your password.">
-            <br><br>
+                <input type="button" class="submit-button" value="Send Message">
+            </form>
+        </div>
+    </div>
+</section>
 
-            <h3>Any message for us?</h3>
-            <textarea name="message" id="message" rows="10" cols="32" 
-            placeholder="Kindly help us with how we can serve you better."></textarea>
-            
-            <input type="button" value="Submit">
-        </justify>
-        </form>
-    </section>
+
+<!--FOOTER SECTION-->
+<section class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section" id="footer-section-1">
+                <h3>OakstoneBank</h3>
+                <p>Strong roots, endless growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick-Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="sign_up.html">Sign Up</a></li>
+                    <li><a href="transfer_money.html">Transfer</a></li>
+                    <li><a href="https://www.google.com" target="_blank">Google Serach</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="index.html"><i class="fab fa-facebook"></i></a>
+                    <a href="index.html"><i class="fab fa-twitter"></i></a>
+                    <a href="index.html"><i class="fab fa-linkedin"></i></a>
+                    <a href="index.html"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Oakstone Bank 2024. All rights reserved.</p>
+
+        </div>
+    </div>
+
+</section>
 </body>
-
-<center><footer>&copy; Oakstone Bank 2024</footer></center>
 
 </html>
